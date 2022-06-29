@@ -1,6 +1,7 @@
 <div id="form">
-  <h2>Sign Up</h2>
-  <form action="/signup" method="POST">
+  <h2>Login</h2>
+ 
+  <form action="/login" method="POST">
  
     <label> Username: <br>
       <input type="text" name="username" placeholder="ironhacker" />
@@ -16,11 +17,10 @@
     <br>
     <br>
  
-    <button type="submit">Create account</button>
+    <button type="submit">Login</button>
  
     {{#if errorMessage}}
       <p class="error">{{errorMessage}}</p>
     {{/if}}
-
   </form>
 </div>
